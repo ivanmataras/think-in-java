@@ -6,7 +6,7 @@
 
     <!-- The Basics -->
     <groupId>ru.ivanmataras.education</groupId>
-    <artifactId>chapter-11</artifactId>
+    <artifactId>chapter-12</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -26,14 +26,6 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
         </dependency>
     </dependencies>
 
