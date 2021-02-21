@@ -8,15 +8,15 @@ import org.junit.jupiter.api.TestMethodOrder;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class TestExercise_16 {
+public class TestExercise_18 {
 
     @Test
     @Order(1)
-    public void testExercise_16() {
-        Exercise_16 exercise_16 = new Exercise_16();
-        assertNotNull(exercise_16);
-        exercise_16.fillArrayOfStringsWithLoop();
-        exercise_16.printArrayOfStrings();
+    public void testExercise_18() {
+        Exercise_18 exercise_18 = new Exercise_18();
+        assertNotNull(exercise_18);
+        exercise_18.fillArrayOfStringsWithLoop();
+        exercise_18.printArrayOfStrings();
     }
 
 }

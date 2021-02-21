@@ -17,9 +17,8 @@ public class TestExercise_13 {
     public void testExercise_13() {
         Exercise_13 exercise_13 = new Exercise_13();
         assertNotNull(exercise_13);
-        assertNotNull(exercise_13.stringField_1);
-        assertNotNull(exercise_13.stringField_2);
-
+        assertNotNull(Exercise_13.stringField_1);
+        assertNotNull(Exercise_13.stringField_2);
     }
 
 }
