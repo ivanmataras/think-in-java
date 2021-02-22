@@ -2,19 +2,20 @@ package ru.ivanmataras.education.chapter7;
 
 import static java.lang.System.out;
 
-public class Line extends Shape {
+ class Line extends Shape {
 
-    private int start, end;
+     private final int start;
+     private final int end;
 
-    public Line(int start, int end) {
-        super(start);
-        this.start = start;
-        this.end = end;
-        out.println("Drawing Line: " + start + ", " + end);
-    }
+     Line(int start, int end) {
+         super(start);
+         this.start = start;
+         this.end = end;
+         out.println("Drawing Line: " + start + ", " + end);
+     }
 
-    @Override
-    void dispose() {
+     @Override
+     void dispose() {
         out.println("Erasing Line: " + start + ", " + end);
         super.dispose();
     }

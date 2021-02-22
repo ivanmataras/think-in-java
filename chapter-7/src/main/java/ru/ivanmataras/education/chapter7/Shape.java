@@ -2,7 +2,7 @@ package ru.ivanmataras.education.chapter7;
 
 import static java.lang.System.out;
 
-public class Shape {
+class Shape {
 
     Shape(int i) {
         out.println("Constructor Shape");

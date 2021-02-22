@@ -2,9 +2,9 @@ package ru.ivanmataras.education.chapter7;
 
 import static java.lang.System.out;
 
-public class Triangle extends Shape {
+class Triangle extends Shape {
 
-    public Triangle(int i) {
+    Triangle(int i) {
         super(i);
         out.println("Drawing Triangle");
     }

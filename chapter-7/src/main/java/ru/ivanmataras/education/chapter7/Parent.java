@@ -1,6 +1,6 @@
 package ru.ivanmataras.education.chapter7;
 
-public class Parent {
+class Parent {
 
     private String parentPrivateField;
     String parentPackageField;
