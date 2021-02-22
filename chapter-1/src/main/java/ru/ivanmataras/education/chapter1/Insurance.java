@@ -1,6 +1,7 @@
 package ru.ivanmataras.education.chapter1;
 
 public class Insurance {
+
     public static final int LOW = 100;
 
     public int premium() {
@@ -10,4 +11,5 @@ public class Insurance {
     public static String category() {
         return "Insurance";
     }
+
 }

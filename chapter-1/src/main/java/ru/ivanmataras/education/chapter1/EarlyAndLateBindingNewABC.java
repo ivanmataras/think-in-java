@@ -1,16 +1,18 @@
 package ru.ivanmataras.education.chapter1;
 
+import static java.lang.System.out;
+
 public class EarlyAndLateBindingNewABC {
 
     static class A {
         public void foo() {
-            System.out.println("Class A");
+            out.println("Class A");
         }
     }
 
     static class B extends A {
         public void foo() {
-            System.out.println("Class B");
+            out.println("Class B");
         }
     }
 

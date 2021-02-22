@@ -1,17 +1,19 @@
 package ru.ivanmataras.education.chapter1;
 
+import static java.lang.System.out;
+
 public class EarlyAndLateBindingNewClass2 {
 
-    public static class SuperClass {
+    static class SuperClass {
         void print() {
-            System.out.println("Print in SuperClass.");
+            out.println("Print in SuperClass.");
         }
     }
 
-    public static class SubClass extends SuperClass {
+    static class SubClass extends SuperClass {
         @Override
         void print() {
-            System.out.println("Print in SubClass.");
+            out.println("Print in SubClass.");
         }
     }
 

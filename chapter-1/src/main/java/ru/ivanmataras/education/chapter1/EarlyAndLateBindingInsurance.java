@@ -1,5 +1,7 @@
 package ru.ivanmataras.education.chapter1;
 
+import static java.lang.System.out;
+
 public class EarlyAndLateBindingInsurance {
 
     public static void main(String[] args) {
@@ -9,8 +11,8 @@ public class EarlyAndLateBindingInsurance {
         int premium = current.premium();
 // Статическое связывание на основе класса
         String category = current.category();
-        System.out.println("premium : " + premium);
-        System.out.println("category : " + category);
+        out.println("premium : " + premium);
+        out.println("category : " + category);
     }
 
 }
