@@ -1,16 +1,16 @@
 package ru.ivanmataras.education.chapter5;
 
-public enum Exercise_21 {
+ enum Exercise_21 {
 
-    WINTER("Winter"),
-    SPRING("Spring"),
-    SUMMER("Summer"),
-    AUTUMN("Autumn");
+     WINTER("Winter"),
+     SPRING("Spring"),
+     SUMMER("Summer"),
+     AUTUMN("Autumn");
 
-    String season;
+     String season;
 
-    Exercise_21(String season) {
-        this.season = season;
+     Exercise_21(String season) {
+         this.season = season;
     }
 
     String getSeason() {

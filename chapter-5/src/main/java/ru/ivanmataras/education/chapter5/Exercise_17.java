@@ -5,16 +5,16 @@ import java.util.UUID;
 
 import static java.lang.System.out;
 
-public class Exercise_17 {
+ class Exercise_17 {
 
-    Exercise_18[] exercise18Array = new Exercise_18[10];
-    String stringField;
+     Exercise_18[] exercise18Array = new Exercise_18[10];
+     String stringField;
 
-    Exercise_17() {
+     Exercise_17() {
 
-    }
+     }
 
-    Exercise_17(String string) {
+     Exercise_17(String string) {
 
     }
 

@@ -2,17 +2,17 @@ package ru.ivanmataras.education.chapter5;
 
 import static java.lang.System.out;
 
-public class Exercise_12 {
+ class Exercise_12 {
 
-    boolean checkedOut = false;
+     boolean checkedOut = false;
 
-    Exercise_12(boolean checkOut) {
-        checkedOut = checkOut;
-    }
+     Exercise_12(boolean checkOut) {
+         checkedOut = checkOut;
+     }
 
-    void chekIn() {
-        checkedOut = false;
-    }
+     void chekIn() {
+         checkedOut = false;
+     }
 
     public void finalize() {
         if (checkedOut) {
