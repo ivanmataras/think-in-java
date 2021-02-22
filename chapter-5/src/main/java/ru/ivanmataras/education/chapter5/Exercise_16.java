@@ -5,17 +5,17 @@ import java.util.UUID;
 
 import static java.lang.System.out;
 
- class Exercise_16 {
+class Exercise_16 {
 
-     String[] stringArray = new String[10];
+    String[] stringArray = new String[10];
 
-     Exercise_16() {
+    Exercise_16() {
 
-     }
+    }
 
-     void fillArrayOfStringsWithLoop() {
-         for (int i = 0; i < stringArray.length; i++) {
-             stringArray[i] = generateRandomString();
+    void fillArrayOfStringsWithLoop() {
+        for (int i = 0; i < stringArray.length; i++) {
+            stringArray[i] = generateRandomString();
         }
     }
 

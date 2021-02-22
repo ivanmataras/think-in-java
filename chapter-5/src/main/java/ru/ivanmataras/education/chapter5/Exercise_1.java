@@ -1,11 +1,11 @@
 package ru.ivanmataras.education.chapter5;
 
- class Exercise_1 {
+class Exercise_1 {
 
-     String stringField;
+    String stringField;
 
-     Exercise_1() {
+    Exercise_1() {
 
-     }
+    }
 
- }
+}

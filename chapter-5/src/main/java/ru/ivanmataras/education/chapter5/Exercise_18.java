@@ -5,17 +5,17 @@ import java.util.UUID;
 
 import static java.lang.System.out;
 
- class Exercise_18 {
+class Exercise_18 {
 
-     Exercise_18[] exercise18Array = new Exercise_18[10];
-     String stringField;
+    Exercise_18[] exercise18Array = new Exercise_18[10];
+    String stringField;
 
-     Exercise_18() {
+    Exercise_18() {
 
-     }
+    }
 
-     Exercise_18(String string) {
-         stringField = string;
+    Exercise_18(String string) {
+        stringField = string;
     }
 
     void fillArrayOfStringsWithLoop() {

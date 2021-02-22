@@ -2,17 +2,17 @@ package ru.ivanmataras.education.chapter5;
 
 import static java.lang.System.out;
 
- class Exercise_5 {
+class Exercise_5 {
 
-     Exercise_5() {
+    Exercise_5() {
 
-     }
+    }
 
-     void printVariable(boolean variable) {
-         out.println(variable);
-     }
+    void printVariable(boolean variable) {
+        out.println(variable);
+    }
 
-     void printVariable(char variable) {
+    void printVariable(char variable) {
         out.println(variable);
     }
 
