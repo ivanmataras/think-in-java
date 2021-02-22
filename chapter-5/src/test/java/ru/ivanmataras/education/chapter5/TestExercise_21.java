@@ -15,11 +15,9 @@ public class TestExercise_21 {
     @Test
     @Order(1)
     public void testExercise_21() {
-
         for (Exercise_21 exercise_21_value : Exercise_21.values()) {
             out.println(exercise_21_value.ordinal() + " " + exercise_21_value.getSeason());
         }
-
     }
 
 }

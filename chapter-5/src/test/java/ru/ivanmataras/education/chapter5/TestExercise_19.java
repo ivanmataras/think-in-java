@@ -17,7 +17,6 @@ public class TestExercise_19 {
         assertNotNull(exercise_19);
         exercise_19.printVariableArguments(new String("argument1"), new String("argument2"));
         exercise_19.printVariableArguments(new String[]{("argument1InArray"), new String("argument2InArray")});
-
     }
 
 }
