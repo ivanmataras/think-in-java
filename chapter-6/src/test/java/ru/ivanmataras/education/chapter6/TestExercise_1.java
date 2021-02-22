@@ -7,19 +7,16 @@ import org.junit.jupiter.api.TestMethodOrder;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import ru.ivanmataras.education.chapter6.package1.Exercise_1;
-
-import static java.lang.System.out;
-
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class TestExercise_1 {
 
     @Test
     @Order(1)
     public void testExercise_22() {
-        Exercise_1 exercise1 = new Exercise_1();
-        assertNotNull(exercise1);
-
+        ru.ivanmataras.education.chapter6.package1.Exercise_1 exercise_1_package_1 = new ru.ivanmataras.education.chapter6.package1.Exercise_1();
+        assertNotNull(exercise_1_package_1);
+        ru.ivanmataras.education.chapter6.package2.Exercise_1 exercise_1_package_2 = new ru.ivanmataras.education.chapter6.package2.Exercise_1();
+        assertNotNull(exercise_1_package_2);
     }
 
 }
