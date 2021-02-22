@@ -13,7 +13,6 @@ public class AutoInc {
         out.println("i : " + --i);
         out.println("i : " + i--);
         out.println("i : " + i);
-
     }
 
 }
