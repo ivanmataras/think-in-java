@@ -1,15 +1,15 @@
 package ru.ivanmataras.education.chapter7;
 
- class Child extends Parent {
+class Child extends Parent {
 
-     private String childPrivateField;
-     String childPackageField;
-     protected String childProtectedField;
-     public String childPublicField;
+    public String childPublicField;
+    protected String childProtectedField;
+    String childPackageField;
+    private String childPrivateField;
 
-     Child() {
+    Child() {
 
-     }
+    }
 
     private void testChildPrivateMethod() {
         childPackageField = "initialized";
