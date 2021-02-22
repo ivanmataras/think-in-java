@@ -1,6 +1,6 @@
 package ru.ivanmataras.education.chapter10;
 
-public class Outer {
+class Outer {
 
     Outer() {
 
