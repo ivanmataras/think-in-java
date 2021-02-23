@@ -8,11 +8,11 @@ import org.junit.jupiter.api.TestMethodOrder;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class TestExercise_7 {
+ class TestExercise_7 {
 
     @Test
     @Order(1)
-    public void testExercise_7() {
+     void testExercise_7() {
         Exercise_7 exercise_7 = new Exercise_7();
         assertNotNull(exercise_7);
     }

@@ -10,11 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static java.lang.System.out;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class TestExercise_21 {
+ class TestExercise_21 {
 
     @Test
     @Order(1)
-    public void testExercise_21() {
+     void testExercise_21() {
         for (Exercise_21 exercise_21_value : Exercise_21.values()) {
             out.println(exercise_21_value.ordinal() + " " + exercise_21_value.getSeason());
         }
