@@ -12,7 +12,7 @@ class TestExercise_3 {
 
     @Test
     @Order(1)
-    void testExercise_22() {
+    void testExercise_2() {
         ru.ivanmataras.education.chapter6.package1.Exercise_3 exercise_3_package_1 = new ru.ivanmataras.education.chapter6.package1.Exercise_3();
         assertNotNull(exercise_3_package_1);
         exercise_3_package_1.debug();
