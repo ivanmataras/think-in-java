@@ -42,4 +42,5 @@ class Exercise_5 {
     public void setPublicStringField(String publicStringField) {
         this.publicStringField = publicStringField;
     }
+
 }
