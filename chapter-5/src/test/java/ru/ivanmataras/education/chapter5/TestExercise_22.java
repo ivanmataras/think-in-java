@@ -9,11 +9,11 @@ import static java.lang.System.out;
 import static ru.ivanmataras.education.chapter5.Exercise_22.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
- class TestExercise_22 {
+class TestExercise_22 {
 
     @Test
     @Order(1)
-     void testExercise_22() {
+    void testExercise_22() {
         Exercise_22 season = Exercise_22.WINTER;
         switch (season) {
             case WINTER -> out.println(WINTER.getSeason());

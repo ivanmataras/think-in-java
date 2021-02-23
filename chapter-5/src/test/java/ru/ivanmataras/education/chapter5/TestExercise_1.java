@@ -12,7 +12,7 @@ class TestExercise_1 {
 
     @Test
     @Order(1)
-     void testExercise_1() {
+    void testExercise_1() {
         Exercise_1 exercise_1 = new Exercise_1();
         assertNull(exercise_1.stringField);
     }
