@@ -42,7 +42,7 @@ class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
         @Override
         public Coffee next() {
             count--;
-            return CoffeeIterator.this.next();
+            return CoffeeGenerator.this.next();
         }
 
         @Override
