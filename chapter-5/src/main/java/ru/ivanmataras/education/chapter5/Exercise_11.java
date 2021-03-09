@@ -8,6 +8,7 @@ class Exercise_11 {
 
     }
 
+    @Override
     public void finalize() {
         out.println("In finalize method");
     }

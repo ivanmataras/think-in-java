@@ -14,6 +14,7 @@ class Exercise_12 {
         checkedOut = false;
     }
 
+    @Override
     public void finalize() {
         if (checkedOut) {
             out.println("Error: checkedOut");
