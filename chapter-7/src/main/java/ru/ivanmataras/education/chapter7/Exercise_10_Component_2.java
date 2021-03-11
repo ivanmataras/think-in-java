@@ -4,7 +4,7 @@ import static java.lang.System.out;
 
 class Exercise_10_Component_2 {
 
-    public Exercise_10_Component_2(String message) {
+    Exercise_10_Component_2(String message) {
         out.println(message);
     }
 
