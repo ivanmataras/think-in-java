@@ -1,14 +1,16 @@
 package ru.ivanmataras.education.chapter1;
 
-public class CarInsurance extends Insurance {
+class CarInsurance extends Insurance {
 
-    public static final int HIGH = 200;
+    static final int HIGH = 200;
 
-    public int premium() {
+    static String category() {
+        return "Car Insurance";
+    }
+
+    @Override
+    int premium() {
         return HIGH;
     }
 
-    public static String category() {
-        return "Car Insurance";
-    }
 }

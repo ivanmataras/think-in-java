@@ -4,12 +4,12 @@ public class Insurance {
 
     public static final int LOW = 100;
 
-    public int premium() {
-        return LOW;
+    static String category() {
+        return "Insurance";
     }
 
-    public static String category() {
-        return "Insurance";
+    int premium() {
+        return LOW;
     }
 
 }
