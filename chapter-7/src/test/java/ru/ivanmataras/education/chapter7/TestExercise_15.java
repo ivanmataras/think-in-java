@@ -22,7 +22,6 @@ class TestExercise_15 {
         Exercise_15_2 exercise_15_2 = new Exercise_15_2();
         assertNotNull(exercise_15_2);
         exercise_15_2.method();
-
     }
 
 }
