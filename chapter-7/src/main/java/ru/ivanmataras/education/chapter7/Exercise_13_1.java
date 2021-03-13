@@ -2,9 +2,9 @@ package ru.ivanmataras.education.chapter7;
 
 import static java.lang.System.out;
 
-class Exercise_12_1 {
+class Exercise_13_1 {
 
-    Exercise_12_1() {
+    Exercise_13_1() {
 
     }
 

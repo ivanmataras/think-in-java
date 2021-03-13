@@ -6,16 +6,16 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(OrderAnnotation.class)
-class TestExercise_12 {
+class TestExercise_13 {
 
     @Test
     @Order(1)
     void testExercise_11() {
-        Exercise_12_2 exercise_12_2 = new Exercise_12_2();
-        exercise_12_2.method((byte) 1);
-        exercise_12_2.method((short) 1);
-        exercise_12_2.method(1);
-        exercise_12_2.method((long) 1);
+        Exercise_13_2 exercise_13_2 = new Exercise_13_2();
+        exercise_13_2.method((byte) 1);
+        exercise_13_2.method((short) 1);
+        exercise_13_2.method(1);
+        exercise_13_2.method((long) 1);
     }
 
 }
