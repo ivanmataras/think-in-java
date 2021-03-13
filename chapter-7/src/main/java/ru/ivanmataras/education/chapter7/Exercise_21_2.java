@@ -7,7 +7,7 @@ class Exercise_21_2 extends Exercise_21_1 {
     }
 
 //     uncomment for compilation error
-//     cant override private or final method in a child class
+//     can't override private or final method in a child class
 
 /*    @Override
     final void method_1() {

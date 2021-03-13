@@ -16,7 +16,7 @@ class TestExercise_21 {
         Exercise_21_2 exercise_21_2 = new Exercise_21_2();
         assertNotNull(exercise_21_2);
 //         uncomment for compilation error
-//         cant override private or final method in a child class
+//         can't override private or final method in a child class
 //        exercise_21_2.method_1();
 
     }
