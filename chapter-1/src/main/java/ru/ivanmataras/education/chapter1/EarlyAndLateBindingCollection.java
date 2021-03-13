@@ -8,11 +8,6 @@ import static java.lang.System.out;
 
 public class EarlyAndLateBindingCollection {
 
-    public static void main(String[] args) {
-        Collection collection = new HashSet();
-        print(collection);
-    }
-
     public static void print(Collection collection) {
         out.println("Collection");
     }
