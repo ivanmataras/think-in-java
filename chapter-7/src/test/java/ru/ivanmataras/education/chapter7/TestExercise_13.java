@@ -10,7 +10,7 @@ class TestExercise_13 {
 
     @Test
     @Order(1)
-    void testExercise_11() {
+    void testExercise_13() {
         Exercise_13_2 exercise_13_2 = new Exercise_13_2();
         exercise_13_2.method((byte) 1);
         exercise_13_2.method((short) 1);
