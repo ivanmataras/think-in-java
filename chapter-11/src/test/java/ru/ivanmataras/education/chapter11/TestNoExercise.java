@@ -8,6 +8,9 @@ import org.junit.jupiter.api.TestMethodOrder;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.System.out;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @TestMethodOrder(OrderAnnotation.class)
 public class TestNoExercise {
 
@@ -21,18 +24,18 @@ public class TestNoExercise {
         String string3 = "string2";
         String string4 = "string3";
         String string5 = null;
+
         list.add(string1);
         list.add(string2);
         list.add(string3);
         list.add(string4);
         list.add(string5);
 
-        list.contains(string1);
-        list.contains(string2);
-        list.contains(string5);
+        assertTrue(list.contains(string1));
+        assertTrue(list.contains(string2));
+        assertTrue(list.contains(string3));
 
-        list.toString();
-
+        out.println(list);
     }
 
     @Test
@@ -44,18 +47,18 @@ public class TestNoExercise {
         TestEntity testEntity3 = new TestEntity();
         TestEntity testEntity4 = new TestEntity();
         TestEntity testEntity5 = null;
+
         list.add(testEntity1);
         list.add(testEntity2);
         list.add(testEntity3);
         list.add(testEntity4);
         list.add(testEntity5);
 
-        list.contains(testEntity1);
-        list.contains(testEntity2);
-        list.contains(testEntity5);
+        assertTrue(list.contains(testEntity1));
+        assertTrue(list.contains(testEntity2));
+        assertTrue(list.contains(testEntity3));
 
-        list.toString();
+        out.println(list);
     }
-
 
 }
