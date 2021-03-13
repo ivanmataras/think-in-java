@@ -14,8 +14,8 @@ class TestExercise_4 {
     @Order(1)
     void testExercise_4() {
         Exercise_4 exercise_4_1 = new Exercise_4();
-        Exercise_4 exercise_4_2 = new Exercise_4("plus message in constructor");
         assertNotNull(exercise_4_1);
+        Exercise_4 exercise_4_2 = new Exercise_4("plus message in constructor");
         assertNotNull(exercise_4_2);
     }
 
