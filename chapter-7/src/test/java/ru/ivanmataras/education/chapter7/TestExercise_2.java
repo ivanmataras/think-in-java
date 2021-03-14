@@ -15,11 +15,11 @@ class TestExercise_2 {
     void testExercise_2() {
         Exercise_2_1 exercise_2_1 = new Exercise_2_1();
         assertNotNull(exercise_2_1);
-        exercise_2_1.method_1_1();
+        exercise_2_1.method_1();
         Exercise_2_2 exercise_2_2 = new Exercise_2_2();
         assertNotNull(exercise_2_2);
-        exercise_2_2.method_1_1();
-        exercise_2_2.method_2_1();
+        exercise_2_2.method_1();
+        exercise_2_2.method_2();
     }
 
 }
