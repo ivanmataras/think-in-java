@@ -9,7 +9,7 @@ class Exercise_2_1 {
     }
 
     void method_1() {
-        out.println("method_1_1 in Exercise_2_1");
+        out.println("method_1 in Exercise_2_1");
     }
 
 }
