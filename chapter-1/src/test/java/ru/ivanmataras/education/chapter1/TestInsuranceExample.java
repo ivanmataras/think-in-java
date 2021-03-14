@@ -16,7 +16,7 @@ class TestInsuranceExample {
     void testInsuranceExample() {
         Insurance insurance = new CarInsurance();
         int insurancePremium = insurance.premium();
-        String insuranceCategory = Insurance.category();
+        String insuranceCategory = insurance.category();
 
         out.println("Insurance premium : " + insurancePremium);
         out.println("Insurance category : " + insuranceCategory);
@@ -26,7 +26,7 @@ class TestInsuranceExample {
 
         CarInsurance carInsurance = new CarInsurance();
         int carInsurancePremium = carInsurance.premium();
-        String carInsuranceCategory = CarInsurance.category();
+        String carInsuranceCategory = carInsurance.category();
 
         out.println("CarInsurance premium : " + carInsurancePremium);
         out.println("CarInsurance category : " + carInsuranceCategory);
