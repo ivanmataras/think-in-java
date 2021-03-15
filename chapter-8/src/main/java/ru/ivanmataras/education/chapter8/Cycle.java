@@ -14,7 +14,6 @@ class Cycle {
 
     void ride(Cycle cycle) {
         cycle.ride();
-        cycle.wheels();
         out.println("Wheels number : ".concat(String.valueOf(cycle.wheels())));
     }
 
