@@ -9,7 +9,7 @@ class Cycle {
     }
 
     void ride() {
-        out.println("method in Exercise_1");
+        out.println("Call ride method in Cycle");
     }
 
 }

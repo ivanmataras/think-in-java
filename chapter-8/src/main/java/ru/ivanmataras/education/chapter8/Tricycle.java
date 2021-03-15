@@ -9,7 +9,7 @@ class Tricycle extends Cycle {
     }
 
     void ride() {
-        out.println("method in Tricycle");
+        out.println("Call ride method in Tricycle");
     }
 
 }
