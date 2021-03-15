@@ -13,4 +13,9 @@ class Tricycle extends Cycle {
         out.println("Call ride method in Tricycle");
     }
 
+    @Override
+    int wheels() {
+        return 3;
+    }
+
 }

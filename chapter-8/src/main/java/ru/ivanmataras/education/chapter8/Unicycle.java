@@ -13,4 +13,9 @@ class Unicycle extends Cycle {
         out.println("Call ride method in Unicycle");
     }
 
+    @Override
+    int wheels() {
+        return 1;
+    }
+
 }
