@@ -8,6 +8,7 @@ class Tricycle extends Cycle {
 
     }
 
+    @Override
     void ride() {
         out.println("Call ride method in Tricycle");
     }
