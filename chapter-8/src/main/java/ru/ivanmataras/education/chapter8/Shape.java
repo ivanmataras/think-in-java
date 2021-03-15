@@ -16,4 +16,8 @@ class Shape {
         out.println("Call erase in Shape");
     }
 
+    void printFigureName() {
+        out.println("Figure name: Shape");
+    }
+
 }

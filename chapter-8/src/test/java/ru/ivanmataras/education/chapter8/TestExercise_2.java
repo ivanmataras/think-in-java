@@ -25,6 +25,7 @@ class TestExercise_2 {
 
         for (Shape shape : shapes) {
             shape.draw();
+            shape.printFigureName();
         }
 
     }

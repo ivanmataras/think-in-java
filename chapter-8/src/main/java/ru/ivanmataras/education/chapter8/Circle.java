@@ -18,4 +18,9 @@ class Circle extends Shape {
         out.println("Call erase in Circle");
     }
 
+    @Override
+    void printFigureName() {
+        out.println("Figure name: Circle");
+    }
+
 }

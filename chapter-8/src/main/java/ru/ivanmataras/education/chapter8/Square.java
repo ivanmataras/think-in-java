@@ -18,4 +18,9 @@ class Square extends Shape {
         out.println("Call erase in Square");
     }
 
+    @Override
+    void printFigureName() {
+        out.println("Figure name: Square");
+    }
+
 }

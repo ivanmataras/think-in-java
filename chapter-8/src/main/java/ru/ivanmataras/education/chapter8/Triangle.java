@@ -18,4 +18,9 @@ class Triangle extends Shape {
         out.println("Call erase in Triangle");
     }
 
+    @Override
+    void printFigureName() {
+        out.println("Figure name: Triangle");
+    }
+
 }
