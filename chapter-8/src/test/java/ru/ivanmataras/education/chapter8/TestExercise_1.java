@@ -27,7 +27,6 @@ class TestExercise_1 {
         Tricycle tricycle = new Tricycle();
         assertNotNull(tricycle);
         cycle.ride(tricycle);
-
     }
 
 }
