@@ -2,13 +2,13 @@ package ru.ivanmataras.education.chapter8;
 
 import static java.lang.System.out;
 
-class Exercise_1 {
+class Cycle {
 
-    Exercise_1() {
+    Cycle() {
 
     }
 
-    void method() {
+    void ride() {
         out.println("method in Exercise_1");
     }
 

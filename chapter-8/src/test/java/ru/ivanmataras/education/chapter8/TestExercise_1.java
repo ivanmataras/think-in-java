@@ -13,20 +13,20 @@ class TestExercise_1 {
     @Test
     @Order(1)
     void testExercise_1() {
-        Exercise_1_utility exercise_1_utility = new Exercise_1_utility();
-        assertNotNull(exercise_1_utility);
+        Cycle_utility cycle_utility = new Cycle_utility();
+        assertNotNull(cycle_utility);
 
-        Exercise_1_1 exercise_1_1 = new Exercise_1_1();
-        assertNotNull(exercise_1_1);
-        exercise_1_utility.methodTestUpcasting(exercise_1_1);
+        Unicycle unicycle = new Unicycle();
+        assertNotNull(unicycle);
+        cycle_utility.methodTestUpcasting(unicycle);
 
-        Exercise_1_2 exercise_1_2 = new Exercise_1_2();
-        assertNotNull(exercise_1_1);
-        exercise_1_utility.methodTestUpcasting(exercise_1_2);
+        Bicycle bicycle = new Bicycle();
+        assertNotNull(unicycle);
+        cycle_utility.methodTestUpcasting(bicycle);
 
-        Exercise_1_3 exercise_1_3 = new Exercise_1_3();
-        assertNotNull(exercise_1_3);
-        exercise_1_utility.methodTestUpcasting(exercise_1_3);
+        Tricycle tricycle = new Tricycle();
+        assertNotNull(tricycle);
+        cycle_utility.methodTestUpcasting(tricycle);
 
     }
 
