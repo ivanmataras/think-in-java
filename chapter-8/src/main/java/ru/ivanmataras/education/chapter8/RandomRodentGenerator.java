@@ -15,7 +15,7 @@ class RandomRodentGenerator {
             case 0 -> new Mouse();
             case 1 -> new Hamster();
             case 2 -> new Squirrel();
-            default -> throw new IllegalStateException("Unexpected value: " + random.nextInt(6));
+            default -> throw new IllegalStateException("Unexpected value: " + random.nextInt(3));
         };
     }
 

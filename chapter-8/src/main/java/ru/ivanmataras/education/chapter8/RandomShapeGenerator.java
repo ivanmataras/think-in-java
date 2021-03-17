@@ -4,7 +4,7 @@ import java.util.Random;
 
 class RandomShapeGenerator {
 
-    private Random random = new Random(10);
+    private Random random = new Random(4);
 
     public RandomShapeGenerator() {
 

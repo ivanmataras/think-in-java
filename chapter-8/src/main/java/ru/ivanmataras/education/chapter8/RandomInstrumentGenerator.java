@@ -4,7 +4,7 @@ import java.util.Random;
 
 class RandomInstrumentGenerator {
 
-    private Random random = new Random(10);
+    private Random random = new Random(6);
 
     public RandomInstrumentGenerator() {
 
