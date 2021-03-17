@@ -12,7 +12,7 @@ class TestExercise_4 {
 
     @Test
     @Order(1)
-    void testExercise_2() {
+    void testExercise_4() {
         Instrument[] instruments = {new Wind(), new Percussion(), new Stringed(), new Brass(), new Woodwind(), new Violin()};
         assertNotNull(instruments);
 

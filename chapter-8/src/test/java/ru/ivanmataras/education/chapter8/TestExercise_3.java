@@ -12,7 +12,7 @@ class TestExercise_3 {
 
     @Test
     @Order(1)
-    void testExercise_2() {
+    void testExercise_3() {
 
         RandomShapeGenerator generator = new RandomShapeGenerator();
         assertNotNull(generator);
