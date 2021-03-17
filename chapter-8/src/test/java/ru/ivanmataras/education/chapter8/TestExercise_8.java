@@ -18,7 +18,7 @@ class TestExercise_8 {
         RandomInstrumentGenerator randomInstrumentGenerator = new RandomInstrumentGenerator();
         assertNotNull(randomInstrumentGenerator);
 
-        Instrument[] instruments = new Instrument[9];
+        Instrument[] instruments = new Instrument[99];
 
         for (int i = 0; i < instruments.length; i++) {
             instruments[i] = randomInstrumentGenerator.next();
