@@ -12,18 +12,13 @@ class RandomShapeGenerator {
 
     Shape next() {
 
-        switch (random.nextInt(4)) {
-            default:
-            case 0:
-                return new Circle();
-            case 1:
-                return new Square();
-            case 2:
-                return new Triangle();
-            case 3:
-                return new Rectangle();
-
-        }
+        return switch (random.nextInt(4)) {
+            case 0 -> new Circle();
+            case 1 -> new Square();
+            case 2 -> new Triangle();
+            case 3 -> new Rectangle();
+            default -> throw new IllegalStateException("Unexpected value: " + random.nextInt(4));
+        };
     }
 
 
