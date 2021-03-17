@@ -14,13 +14,13 @@ class TestExercise_2 {
     @Order(1)
     void testExercise_2() {
 
-        RandomShapeGenerator generator = new RandomShapeGenerator();
-        assertNotNull(generator);
+        RandomShapeGenerator randomShapeGenerator = new RandomShapeGenerator();
+        assertNotNull(randomShapeGenerator);
 
         Shape[] shapes = new Shape[9];
 
         for (int i = 0; i < shapes.length; i++) {
-            shapes[i] = generator.next();
+            shapes[i] = randomShapeGenerator.next();
         }
 
         for (Shape shape : shapes) {
