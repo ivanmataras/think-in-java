@@ -5,7 +5,7 @@ import static java.lang.System.out;
 class Hamster extends Rodent {
 
     Hamster() {
-
+        out.println("Call Hamster constructor");
     }
 
     @Override

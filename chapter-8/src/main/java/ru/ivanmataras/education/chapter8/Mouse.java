@@ -5,7 +5,7 @@ import static java.lang.System.out;
 class Mouse extends Rodent {
 
     Mouse() {
-
+        out.println("Call Mouse constructor");
     }
 
     @Override

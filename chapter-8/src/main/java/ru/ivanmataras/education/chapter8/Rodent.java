@@ -5,7 +5,7 @@ import static java.lang.System.out;
 class Rodent {
 
     Rodent() {
-
+        out.println("Call Rodent constructor");
     }
 
     void searchForFood() {
