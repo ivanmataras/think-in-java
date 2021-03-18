@@ -30,8 +30,6 @@ class TestExercise_14 {
         Arrays.fill(composings, null);
 
         gc();
-
-
     }
 
 }
