@@ -18,4 +18,9 @@ class Bicycle extends Cycle {
         return 2;
     }
 
+    @Override
+    void balance() {
+        out.println("Call balance method in Bicycle");
+    }
+
 }

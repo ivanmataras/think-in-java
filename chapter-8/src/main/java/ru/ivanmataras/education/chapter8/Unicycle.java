@@ -18,4 +18,9 @@ class Unicycle extends Cycle {
         return 1;
     }
 
+    @Override
+    void balance() {
+        out.println("Call balance method in Unicycle");
+    }
+
 }

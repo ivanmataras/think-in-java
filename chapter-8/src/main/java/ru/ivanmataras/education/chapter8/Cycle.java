@@ -21,4 +21,8 @@ class Cycle {
         return 0;
     }
 
+    void balance() {
+        out.println("Call balance method in Cycle");
+    }
+
 }
