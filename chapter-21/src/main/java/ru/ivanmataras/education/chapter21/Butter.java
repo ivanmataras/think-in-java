@@ -1,12 +1,14 @@
 package ru.ivanmataras.education.chapter21;
 
+import java.util.concurrent.BlockingQueue;
+
 import static java.lang.System.out;
 
 class Butter implements Runnable {
 
-    private ToastQueue dryQueue, butteredQueue;
+    private BlockingQueue<Toast> dryQueue, butteredQueue;
 
-    public Butter(ToastQueue dryQueue, ToastQueue butteredQueue) {
+    public Butter(BlockingQueue<Toast> dryQueue, BlockingQueue<Toast> butteredQueue) {
         this.dryQueue = dryQueue;
         this.butteredQueue = butteredQueue;
     }
@@ -16,7 +18,7 @@ class Butter implements Runnable {
 
         try {
             while (!Thread.interrupted()) {
-                Toast toast = (Toast) dryQueue.take();
+                Toast toast = dryQueue.take();
                 toast.butter();
                 out.println(toast);
                 butteredQueue.put(toast);

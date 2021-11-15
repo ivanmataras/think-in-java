@@ -1,19 +1,20 @@
 package ru.ivanmataras.education.chapter21;
 
 import java.util.Random;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.System.out;
 
 class Toaster implements Runnable {
 
-    private ToastQueue toastQueue;
+    private BlockingQueue<Toast> toastQueue;
 
     private int count = 0;
 
     private Random random = new Random(47);
 
-    public Toaster(ToastQueue toastQueue) {
+    public Toaster(BlockingQueue<Toast> toastQueue) {
         this.toastQueue = toastQueue;
     }
 

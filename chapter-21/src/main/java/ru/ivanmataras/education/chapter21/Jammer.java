@@ -1,12 +1,14 @@
 package ru.ivanmataras.education.chapter21;
 
+import java.util.concurrent.BlockingQueue;
+
 import static java.lang.System.out;
 
 class Jammer implements Runnable {
 
-    private ToastQueue butteredQueue, finishedQueue;
+    private BlockingQueue<Toast> butteredQueue, finishedQueue;
 
-    public Jammer(ToastQueue butteredQueue, ToastQueue finishedQueue) {
+    public Jammer(BlockingQueue<Toast> butteredQueue, BlockingQueue<Toast> finishedQueue) {
         this.butteredQueue = butteredQueue;
         this.finishedQueue = finishedQueue;
     }
@@ -16,7 +18,7 @@ class Jammer implements Runnable {
 
         try {
             while (!Thread.interrupted()) {
-                Toast toast = (Toast) butteredQueue.take();
+                Toast toast = butteredQueue.take();
                 toast.jam();
                 out.println(toast);
                 finishedQueue.put(toast);

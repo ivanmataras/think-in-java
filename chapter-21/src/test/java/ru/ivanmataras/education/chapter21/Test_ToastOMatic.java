@@ -3,9 +3,7 @@ package ru.ivanmataras.education.chapter21;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 class Test_ToastOMatic {
 
@@ -13,7 +11,9 @@ class Test_ToastOMatic {
     @Order(1)
     void testToastOMatic() throws InterruptedException {
 
-        ToastQueue dryQueue = new ToastQueue(), butteredQueue = new ToastQueue(), finishedQueue = new ToastQueue();
+        BlockingQueue<Toast> dryQueue = new LinkedBlockingQueue<Toast>();
+        BlockingQueue<Toast> butteredQueue = new LinkedBlockingQueue<Toast>();
+        BlockingQueue<Toast> finishedQueue = new LinkedBlockingQueue<Toast>();
 
         ExecutorService executorService = Executors.newCachedThreadPool();
         executorService.execute(new Toaster(dryQueue));
