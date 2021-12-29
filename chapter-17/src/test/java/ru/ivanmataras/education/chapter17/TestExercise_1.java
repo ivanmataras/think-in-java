@@ -9,8 +9,8 @@ import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Stream;
 
+import static java.lang.System.out;
 import static java.util.stream.Collectors.toCollection;
-
 
 @TestMethodOrder(OrderAnnotation.class)
 class TestExercise_1 {
@@ -64,7 +64,7 @@ class TestExercise_1 {
 
         Set<String> leadersHashSet = new HashSet<String>(Arrays.asList("Сталин", "Ленин", "Че Гевара"));
         Set<String> leadersTreeSet = new HashSet<String>(Arrays.asList("Сталин", "Ленин", "Че Гевара"));
-        System.out.println("Leaders = " + leadersHashSet);
+        out.println("Leaders = " + leadersHashSet);
 
     }
 
