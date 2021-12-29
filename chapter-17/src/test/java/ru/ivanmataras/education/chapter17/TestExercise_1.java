@@ -32,39 +32,48 @@ class TestExercise_1 {
     @Order(2)
     void testFillCollectionsWithPersons() {
 
+        Person person1 = new Person(1, "Владимир", "Владимирович", "Путин", LocalDate.of(1952, 10, 7));
+        Person person2 = new Person(2, "Борис", "Николаевич", "Ельцин", LocalDate.of(1931, 2, 1));
+        Person person3 = new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2));
+        Person person4 = new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2));
+
         List<Person> personsArrayList = new ArrayList<Person>();
-        personsArrayList.add(new Person(1, "Владимир", "Владимирович", "Путин", LocalDate.of(1952, 10, 7)));
-        personsArrayList.add(new Person(2, "Борис", "Николаевич", "Ельцин", LocalDate.of(1931, 2, 1)));
-        personsArrayList.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
-        personsArrayList.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
+        personsArrayList.add(person1);
+        personsArrayList.add(person2);
+        personsArrayList.add(person3);
+        personsArrayList.add(person4);
 
         List<Person> personsLinkedList = new LinkedList<Person>();
-        personsLinkedList.add(new Person(1, "Владимир", "Владимирович", "Путин", LocalDate.of(1952, 10, 7)));
-        personsLinkedList.add(new Person(2, "Борис", "Николаевич", "Ельцин", LocalDate.of(1931, 2, 1)));
-        personsLinkedList.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
-        personsLinkedList.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
+        personsLinkedList.add(person1);
+        personsLinkedList.add(person2);
+        personsLinkedList.add(person3);
+        personsLinkedList.add(person4);
 
         Set<Person> personsHashSet = new HashSet<Person>();
-        personsHashSet.add(new Person(1, "Владимир", "Владимирович", "Путин", LocalDate.of(1952, 10, 7)));
-        personsHashSet.add(new Person(2, "Борис", "Николаевич", "Ельцин", LocalDate.of(1931, 2, 1)));
-        personsHashSet.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
-        personsHashSet.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
+        personsHashSet.add(person1);
+        personsHashSet.add(person2);
+        personsHashSet.add(person3);
+        personsHashSet.add(person4);
 
         Set<Person> personsLinkedHashSet = new LinkedHashSet<>();
-        personsLinkedHashSet.add(new Person(1, "Владимир", "Владимирович", "Путин", LocalDate.of(1952, 10, 7)));
-        personsLinkedHashSet.add(new Person(2, "Борис", "Николаевич", "Ельцин", LocalDate.of(1931, 2, 1)));
-        personsLinkedHashSet.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
-        personsLinkedHashSet.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
+        personsLinkedHashSet.add(person1);
+        personsLinkedHashSet.add(person2);
+        personsLinkedHashSet.add(person3);
+        personsLinkedHashSet.add(person4);
 
         Set<Person> personsTreeSet = new TreeSet<Person>();
-        personsTreeSet.add(new Person(1, "Владимир", "Владимирович", "Путин", LocalDate.of(1952, 10, 7)));
-        personsTreeSet.add(new Person(2, "Борис", "Николаевич", "Ельцин", LocalDate.of(1931, 2, 1)));
-        personsTreeSet.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
-        personsTreeSet.add(new Person(3, "Михаил", "Сергеевич", "Горбачёв", LocalDate.of(1931, 3, 2)));
+        personsTreeSet.add(person1);
+        personsTreeSet.add(person2);
+        personsTreeSet.add(person3);
+        personsTreeSet.add(person4);
 
         Set<String> leadersHashSet = new HashSet<String>(Arrays.asList("Сталин", "Ленин", "Че Гевара"));
+        Set<String> leadersLinkedHashSet = new LinkedHashSet<String>(Arrays.asList("Сталин", "Ленин", "Че Гевара"));
         Set<String> leadersTreeSet = new HashSet<String>(Arrays.asList("Сталин", "Ленин", "Че Гевара"));
+
         out.println("Leaders = " + leadersHashSet);
+        out.println("Leaders = " + leadersLinkedHashSet);
+        out.println("Leaders = " + leadersTreeSet);
 
     }
 
