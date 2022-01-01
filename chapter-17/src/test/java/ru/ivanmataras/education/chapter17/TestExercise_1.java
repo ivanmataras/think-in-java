@@ -67,13 +67,38 @@ class TestExercise_1 {
         personsTreeSet.add(person3);
         personsTreeSet.add(person4);
 
-        Set<String> leadersHashSet = new HashSet<String>(Arrays.asList("Сталин", "Ленин", "Че Гевара"));
-        Set<String> leadersLinkedHashSet = new LinkedHashSet<String>(Arrays.asList("Сталин", "Ленин", "Че Гевара"));
-        Set<String> leadersTreeSet = new HashSet<String>(Arrays.asList("Сталин", "Ленин", "Че Гевара"));
+        List<String> leadersList = Arrays.asList("Сталин", "Ленин", "Че Гевара");
 
-        out.println("Leaders = " + leadersHashSet);
-        out.println("Leaders = " + leadersLinkedHashSet);
-        out.println("Leaders = " + leadersTreeSet);
+        Set<String> leadersHashSet = new HashSet<String>(leadersList);
+        Set<String> leadersLinkedHashSet = new LinkedHashSet<String>(leadersList);
+        Set<String> leadersTreeSet = new TreeSet<String>(leadersList);
+
+        out.println("leadersHashSet = " + leadersHashSet);
+        out.println("leadersLinkedHashSet = " + leadersLinkedHashSet);
+        out.println("leadersTreeSet = " + leadersTreeSet);
+
+        List<Integer> integersList = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        Set<Integer> integersHashSet = new HashSet<Integer>(integersList);
+        Set<Integer> integersLinkedHashSet = new LinkedHashSet<Integer>(integersList);
+        Set<Integer> integersTreeSet = new TreeSet<Integer>(integersList);
+
+        out.println("integersHashSet = " + integersHashSet);
+        out.println("integersLinkedHashSet = " + integersLinkedHashSet);
+        out.println("integersTreeSet = " + integersTreeSet);
+
+        Character[] englishAlphabetUpperCase = new Character[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+
+        List<Character> charactersList = Arrays.asList(englishAlphabetUpperCase);
+
+        Set<Character> charactersHashSet = new HashSet<Character>(charactersList);
+        Set<Character> charactersLinkedHashSet = new LinkedHashSet<Character>(charactersList);
+        Set<Character> charactersTreeSet = new TreeSet<Character>(charactersList);
+
+        out.println("charactersHashSet = " + charactersHashSet);
+        out.println("charactersLinkedHashSet = " + charactersLinkedHashSet);
+        out.println("charactersTreeSet = " + charactersTreeSet);
+
 
     }
 
