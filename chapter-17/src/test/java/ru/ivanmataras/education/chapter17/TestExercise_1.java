@@ -6,6 +6,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 
 import java.time.LocalDate;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Stream;
 
 import static java.lang.System.out;
@@ -63,6 +64,56 @@ class TestExercise_1 {
         personsTreeSet.add(person2);
         personsTreeSet.add(person3);
         personsTreeSet.add(person4);
+
+        Map<Integer, Person> personsHashMap = new HashMap<Integer, Person>();
+        personsHashMap.put(1, person1);
+        personsHashMap.put(2, person2);
+        personsHashMap.put(3, person3);
+        personsHashMap.put(4, person4);
+
+        Map<Integer, Person> personsLinkedHashMap = new LinkedHashMap<Integer, Person>();
+        personsLinkedHashMap.put(1, person1);
+        personsLinkedHashMap.put(2, person2);
+        personsLinkedHashMap.put(3, person3);
+        personsLinkedHashMap.put(4, person4);
+
+        Map<Integer, Person> personsTreeMap = new TreeMap<Integer, Person>();
+        personsTreeMap.put(1, person1);
+        personsTreeMap.put(2, person2);
+        personsTreeMap.put(3, person3);
+        personsTreeMap.put(4, person4);
+
+        Map<Integer, Person> personsWeakHashMap = new WeakHashMap<Integer, Person>();
+        personsWeakHashMap.put(1, person1);
+        personsWeakHashMap.put(2, person2);
+        personsWeakHashMap.put(3, person3);
+        personsWeakHashMap.put(4, person4);
+
+        Map<Integer, Person> personsConcurrentHashMap = new ConcurrentHashMap<Integer, Person>();
+        personsConcurrentHashMap.put(1, person1);
+        personsConcurrentHashMap.put(2, person2);
+        personsConcurrentHashMap.put(3, person3);
+        personsConcurrentHashMap.put(4, person4);
+
+        Map<Integer, Person> personsIdentityHashMap = new IdentityHashMap<Integer, Person>();
+        personsIdentityHashMap.put(1, person1);
+        personsIdentityHashMap.put(2, person2);
+        personsIdentityHashMap.put(3, person3);
+        personsIdentityHashMap.put(4, person4);
+
+        out.println("personsArrayList = " + personsArrayList);
+        out.println("personsLinkedList = " + personsLinkedList);
+
+        out.println("personsHashSet = " + personsHashSet);
+        out.println("personsLinkedHashSet = " + personsLinkedHashSet);
+        out.println("personsTreeSet = " + personsTreeSet);
+
+        out.println("personsHashMap = " + personsHashMap);
+        out.println("personsLinkedHashMap = " + personsLinkedHashMap);
+        out.println("personsTreeMap = " + personsTreeMap);
+        out.println("personsWeakHashMap = " + personsWeakHashMap);
+        out.println("personsConcurrentHashMap = " + personsConcurrentHashMap);
+        out.println("personsIdentityHashMap = " + personsIdentityHashMap);
 
     }
 
