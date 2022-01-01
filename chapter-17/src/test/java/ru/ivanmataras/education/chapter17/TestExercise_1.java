@@ -1,7 +1,6 @@
 package ru.ivanmataras.education.chapter17;
 
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
@@ -16,7 +15,6 @@ import static java.util.stream.Collectors.toCollection;
 class TestExercise_1 {
 
     @Test
-    @Order(1)
     void testExercise_1() {
 
         List<Integer> arrayListOfInteger = Stream.iterate(1, n -> n + 1).limit(10).collect(toCollection(ArrayList::new));
@@ -29,8 +27,7 @@ class TestExercise_1 {
     }
 
     @Test
-    @Order(2)
-    void testFillCollectionsWithPersons() {
+    void testFillCollectionsWithPersonsObjects() {
 
         Person person1 = new Person(1, "Владимир", "Владимирович", "Путин", LocalDate.of(1952, 10, 7));
         Person person2 = new Person(2, "Борис", "Николаевич", "Ельцин", LocalDate.of(1931, 2, 1));
@@ -67,15 +64,10 @@ class TestExercise_1 {
         personsTreeSet.add(person3);
         personsTreeSet.add(person4);
 
-        List<String> leadersList = Arrays.asList("Сталин", "Ленин", "Че Гевара");
+    }
 
-        Set<String> leadersHashSet = new HashSet<String>(leadersList);
-        Set<String> leadersLinkedHashSet = new LinkedHashSet<String>(leadersList);
-        Set<String> leadersTreeSet = new TreeSet<String>(leadersList);
-
-        out.println("leadersHashSet = " + leadersHashSet);
-        out.println("leadersLinkedHashSet = " + leadersLinkedHashSet);
-        out.println("leadersTreeSet = " + leadersTreeSet);
+    @Test
+    void testFillCollectionsWithIntegerType() {
 
         List<Integer> integersList = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
@@ -86,6 +78,11 @@ class TestExercise_1 {
         out.println("integersHashSet = " + integersHashSet);
         out.println("integersLinkedHashSet = " + integersLinkedHashSet);
         out.println("integersTreeSet = " + integersTreeSet);
+
+    }
+
+    @Test
+    void testFillCollectionsWithCharacterType() {
 
         Character[] englishAlphabetUpperCase = new Character[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
@@ -99,6 +96,20 @@ class TestExercise_1 {
         out.println("charactersLinkedHashSet = " + charactersLinkedHashSet);
         out.println("charactersTreeSet = " + charactersTreeSet);
 
+    }
+
+    @Test
+    void testFillCollectionsWithLeadersString() {
+
+        List<String> leadersList = Arrays.asList("Сталин", "Ленин", "Че Гевара");
+
+        Set<String> leadersHashSet = new HashSet<String>(leadersList);
+        Set<String> leadersLinkedHashSet = new LinkedHashSet<String>(leadersList);
+        Set<String> leadersTreeSet = new TreeSet<String>(leadersList);
+
+        out.println("leadersHashSet = " + leadersHashSet);
+        out.println("leadersLinkedHashSet = " + leadersLinkedHashSet);
+        out.println("leadersTreeSet = " + leadersTreeSet);
 
     }
 
