@@ -55,7 +55,7 @@ class TestExercise_1 {
         personsHashSet.add(person3);
         personsHashSet.add(person4);
 
-        Set<Person> personsLinkedHashSet = new LinkedHashSet<>();
+        Set<Person> personsLinkedHashSet = new LinkedHashSet<Person>();
         personsLinkedHashSet.add(person1);
         personsLinkedHashSet.add(person2);
         personsLinkedHashSet.add(person3);
