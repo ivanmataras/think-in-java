@@ -72,7 +72,7 @@
     </modules>
 
     <properties>
-        <maven.version>3.8.4</maven.version>
+        <maven.version>3.8.5</maven.version>
         <jdk.version>17</jdk.version>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
